@@ -1,0 +1,133 @@
+Pour donner envie de voyager quand il fait gris ou juste pour s'amuser,
+ l'application établie une comparaison entre la ville actuelle et une ville au choix 
+(météo locale, distance à la mer, niveau de vie, etc..).
+
+Elle donne également les places des villes dans les classements du type "vivabilité" 
+(exemple: http://www.kooperation-international.de/uploads/media/NEW_August_liveability_PDF.pdf) 
+et peut éventuellement proposer des liens vers des compagnies de voyage, ou 
+afficher la ville cible sur une carte... Beaucoup de fonctions peuvent êtres rajoutées facilement.
+
+
+-possibilité de reporter l'idée sur soit un pays, soit une région du monde
+-pour une ville donnée lister des sites touristiques….
+-faire un truc aléatoire quand on ne sait pas qu'elle ville découvrir…..
+-calculer la distance entre les 2 villes (on pourrait le cal
+-des petites anecdotes sur la ville (passé historique particulier?,…légendes…caractéristiques: population la +dense, - jeune  (et/ou les données)….
+-une partie quizz QCM… sur des villes, si possible 
+
+===Bouton pour les Instructions désactiveable.
+
+
+API:
+
+    http://dbpedia.org/About
+    http://www.wunderground.com/weather/api
+    https://developer.flightstats.com/products
+
+
+Membres de L'équipe :   Paul Willot   		( starbuck117 sur github )
+
+			Christian Sigouin 		( Droidyourelookingfor )
+			
+			Kevin Lorant			( LorantK sur github )
+
+		        Pegdwende Stéphane  minoungou   ( minoungoup  sur github )
+
+Plan pour le prototype papier : 
+
+Légende : "-"   1er affichage après choix de la catégorie
+	  "--"  2e affichage après deux choix correspondant
+	  "---" 3e affichage après trois choix...
+	  "=" Affichage alternatif selon le mode
+
+
+
+Pays d'intérêt  -- province/région			--- Ville (active mode Ville et les boutons de choix entre mode Compare et mode Ville)
+		-- Détails du Pays (active mode Pays)	--- option ville au hasard (active mode ville et les boutons de choix entre mode Compare et mode Ville)
+							--- Détails province/région (active mode Région)
+
+Changer ville d'origine (Ville locale par défaut) 							
+
+4 type de mode Global
+		   -- Mode Ville : Détails uniquement sur la ville de destination (mode par défaut)
+		   -- Mode Compare : Comparaison entre ville
+		   -- Mode Région : Détails globaux de la province/région
+		   -- Mode Pays : Détails globaux du pays ou 
+			
+Informations Générales
+
+	-météo (mode Ville ou Compare)	-- Duration/afficahe (période : un jour, 3 jours, semaines...)
+							---Un jour
+							---3 jours
+							---semaines
+
+	=météo (mode Région ou pays)  --Liste de secteurs  --- Duration/affichage
+									----Un jour
+									----3 jours
+									----Semaines
+
+
+	-distance à la mer (affiche info en métrique et américain)
+			  --lieux de baignade   --- plages
+						--- Piscines publiques
+						--- hotels avec piscines
+
+	=distance à la mer (en mode compare on rajoute distance entre les villes)
+
+
+	-niveau de vie (donne des détails générux niveau survie : vaccins requis, disponibilité des abris, taux de criminalité
+		--Classements de villes du type vivabilité
+			---Villes environnentes en plus de la ville d'intérêt 
+			---Villes importantes de la région
+			---Villes importantes du pays
+	
+	-Moyens de transports disponible (Donne des détails sur ce qui est disponible et donne un lien pour 
+						d'aller à la section correspondante dans Voyage/transport)
+			--avions
+			--bus de voyage
+			--train
+			--commune auto
+			--transport en commun
+				---Autobus
+				---Métro
+
+	=Moyens de transports (en mode compare on rajoute distance entre les villes)
+
+	-Annecdotes/historiques
+	-Quiz
+	
+
+Voyage/transport
+
+	-Liens compagnies de voyage
+		--Avions
+		--Bus
+		--Trains
+		--transport en commun local
+
+	-Moyens de transports 
+		--avions
+		--bus de voyage
+		--train
+		--commune auto
+		--transport en commun
+			---Autobus
+			---Métro
+
+	=Moyens de transports (en mode compare on rajoute distance entre les villes)
+
+Liste touristiques
+	-sites
+		--sites Historique --- Liste ----Afficher lieu
+		--sites naturel    --- Liste ----Afficher lieu
+
+	-Activités 
+		--lieux de baignade --- Liste ---- Afficher lieu
+		--etc
+
+	-Évènements 
+		--Liste --- Afficher lieu
+
+Afficher ville sur une carte (ou pays ou région selon le mode)
+		-- google maps
+		-- GPS (si disponibles)
