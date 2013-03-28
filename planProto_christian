@@ -21,9 +21,9 @@ afficher la ville cible sur une carte... Beaucoup de fonctions peuvent êtres ra
 
 API:
 
-    http://dbpedia.org/About
+    http://www.geonames.org/export/web-services.html
     http://www.wunderground.com/weather/api
-    https://developer.flightstats.com/products
+    https://developer.flightstats.com/products   (optionelle)
 
 
 Membres de L'équipe :   Paul Willot   		( starbuck117 sur github )
@@ -68,7 +68,7 @@ Informations Générales
 									----Semaines
 
 
-	-distance à la mer (affiche info en métrique et américain)
+	-distance à la mer (affiche info en métrique et américain)	// semble difficile à faire mais pas infaisable
 			  --lieux de baignade   --- plages
 						--- Piscines publiques
 						--- hotels avec piscines
