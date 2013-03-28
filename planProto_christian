@@ -11,7 +11,8 @@ afficher la ville cible sur une carte... Beaucoup de fonctions peuvent êtres ra
 -possibilité de reporter l'idée sur soit un pays, soit une région du monde
 -pour une ville donnée lister des sites touristiques….
 -faire un truc aléatoire quand on ne sait pas qu'elle ville découvrir…..
--calculer la distance entre les 2 villes (on pourrait le cal
+-calculer la distance entre les 2 villes 
+	(orthodromie :  M = 60 * arccos[sin(latA)*sin(latB) + cos(latA)*cos(latB)*cos(longB - longA)]
 -des petites anecdotes sur la ville (passé historique particulier?,…légendes…caractéristiques: population la +dense, - jeune  (et/ou les données)….
 -une partie quizz QCM… sur des villes, si possible 
 
